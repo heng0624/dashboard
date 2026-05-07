@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
-from data_loader import load_data, load_target, load_monthly
+from .data_loader import load_data, load_target, load_monthly
 import pandas as pd
 app = Flask(
     __name__,
