@@ -40,6 +40,8 @@ function renderMonthlyTables(groupedData) {
 
     Object.keys(groupedData).sort().forEach(month => {
 
+        groupedData[month].sort((a, b) => Number(b.rm_paid) - Number(a.rm_paid));
+
         if (!currentPages[month]) {
             currentPages[month] = 1;
         }
