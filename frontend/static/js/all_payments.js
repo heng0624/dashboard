@@ -56,8 +56,8 @@ function renderMonthlyTables(groupedData) {
             <table>
                 <thead>
                     <tr>
+                        <th>No.</th>
                         <th>Account</th>
-                        <th>IC</th>
                         <th>Name</th>
                         <th>Total Paid</th>
                     </tr>
