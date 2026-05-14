@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MSM PARTNERS SDN BHD</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all_payments.css') }}?v=2">
+
+</head>
+<body>
+<h2>All Payments (2026 Comparison)</h2>
+    <button onclick="goBack()" class="back-btn">← Back</button>
+
+<div class="filters">
+    <select id="productFilter">
+        <option value="ALL">All Products</option>
+    </select>
+</div>
+
+<div id="tablesContainer"></div>
+
+
+<script src="/static/js/all_payments.js"></script>
+</body>

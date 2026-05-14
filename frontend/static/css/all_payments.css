@@ -1,0 +1,161 @@
+/* PAGE BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #3730a3;
+}
+
+/* FILTER */
+.filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filters select {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+/* GRID CONTAINER */
+#tablesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+/* MONTH CARD */
+.month-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.2s;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.month-card:hover {
+    transform: translateY(-2px);
+}
+
+/* MONTH TITLE */
+.month-card h3 {
+    margin: 0 0 10px 0;
+    padding: 6px 10px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* TABLE */
+.month-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+/* HEADER */
+.month-card th {
+    background: #eef2ff;
+    color: #1e1b4b;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.month-card th:nth-child(1) { width: 10%; }
+.month-card th:nth-child(2) { width: 25%; }
+.month-card th:nth-child(3) { width: 35%; }
+.month-card th:nth-child(4) { width: 30%; }
+
+/* ROWS */
+.month-card td {
+    border-bottom: 1px solid #eee;
+    padding: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: help;
+}
+
+.month-card td.truncate-cell {
+    max-width: 160px;
+}
+
+.month-card tr:hover {
+    background: #f9fafb;
+}
+
+/* PAGINATION */
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pagination button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.pagination button:disabled {
+    background: #c7c7c7;
+    cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    #tablesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #tablesContainer {
+        grid-template-columns: 1fr;
+    }
+}

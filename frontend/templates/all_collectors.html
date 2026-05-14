@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MSM PARTNERS SDN BHD</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all_collectors.css') }}">
+
+</head>
+<body>
+<h2>Collectors Performance (2026)</h2>
+<button onclick="goBack()" class="back-btn">← Back</button>
+
+<!-- PRODUCT FILTER -->
+<div class="filters">
+    <select id="productFilter">
+        <option value="ALL">All Products</option>
+    </select>
+</div>
+
+<div class="collector-grid" id="collectorGrid"></div>
+
+
+<script src="/static/js/all_collectors.js"></script>
+</body>
