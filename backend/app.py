@@ -100,7 +100,7 @@ def apply_filters(df):
     if pp and pp != "ALL":
         if "PP" in df.columns:
             df["PP"] = df["PP"].astype(str).str.upper().str.strip()
-            df = df[df["PP"] == pp]
+            df = df[df["PP"] == pp.upper().strip()]
         elif pp in df.columns:
             df[pp] = df[pp].astype(str).str.upper().str.strip()
             df = df[df[pp] != ""]
